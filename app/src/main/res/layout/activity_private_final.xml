@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    <Button
+        android:id="@+id/back2"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="BACK"
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="450dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/back2"
+        android:background="@color/Green"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Amount Paid"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/Grey"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@mipmap/graph3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_below="@+id/textView10"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="19dp"
+        android:text=" Private Loan\n Interest Rate: 4.2%\n Amount: $42,000\n Duration: 15 years"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text=" Subsidized Loan\n Interest Rate: 5%\n Amount: $5,000\n Duration:10 years"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_marginEnd="11dp"
+        android:text=" Unsubsidized Loan\n Interest Rate: 5.5%\n Amount: $2,500\n Duration:10 years"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="93dp" />
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@mipmap/graph11" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="450dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/next"
+        android:background="@color/Green"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Low Risk Loan Plan"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/Grey"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="NEXT"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginEnd="9dp"
+        android:layout_toStartOf="@+id/textView9"
+        android:fontFamily="serif"
+        android:text="Monthly Salary:\n\nLoans:\nHousing:\nTaxes:\nRetirement:\nSavings:"
+        android:textAlignment="textEnd"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginEnd="46dp"
+        android:layout_toStartOf="@+id/next"
+        android:fontFamily="serif"
+        android:text="$7351.66\n\n$547.46\n$2205.50\n$1837.92\n$955.72\n$1102.75"
+        android:textSize="20sp" />
+
+</RelativeLayout>

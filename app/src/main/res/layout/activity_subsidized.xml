@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <Button
+        android:id="@+id/backbutton3"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimary"
+        android:text="GO BACK"
+        android:textColor="@color/Grey"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="500dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/name30"
+        android:layout_marginTop="15dp"
+        android:background="@color/Grey"
+        android:fontFamily="serif"
+        android:text="Please enter the following data"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name35"
+        android:digits="0123456789."
+        android:inputType="phone"
+        android:layout_width="160dp"
+        android:layout_height="50sp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView40"
+        android:layout_marginTop="57dp"
+        android:fontFamily="serif"
+        android:hint="Interest Rate"
+        android:textSize="14sp"
+        android:typeface="serif" />
+
+    <AutoCompleteTextView
+        android:id="@+id/occupation_filed"
+        android:layout_width="160dp"
+        android:layout_height="50sp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="serif"
+        android:hint="Occupation"
+        android:textSize="14sp"
+        android:typeface="serif" />
+
+    <AutoCompleteTextView
+        android:id="@+id/location_filed"
+        android:layout_width="160dp"
+        android:layout_height="50sp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="serif"
+        android:hint="Location"
+        android:textSize="14sp"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/name30"
+        android:digits="0123456789"
+        android:inputType="phone"
+        android:layout_width="160dp"
+        android:layout_height="50sp"
+        android:layout_alignBottom="@+id/name35"
+        android:layout_alignParentStart="true"
+        android:fontFamily="serif"
+        android:hint="Amount Borrowed"
+        android:textSize="14sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backbutton3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="55dp"
+        android:background="@color/colorPrimary"
+        android:text="Calculate"
+        android:textColor="@color/Grey" />
+
+</RelativeLayout>

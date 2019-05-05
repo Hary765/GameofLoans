@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:fontFamily="serif"
+        android:text="Budgeting"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="25dp"
+        android:fontFamily="serif"
+        android:text="Our proposed budget is a suggestion. These values are not for everyone and we advise you to take them with a grain of salt. We do not recommend taking out loans that require monthly payments that exceed 10% of post-graduation income.
+\nHowever, loan repayment is personal and must be adapted on a case-by-case basis. We have based our algorithms off of static payment plans, due to them often resulting in the lowest total cost, however, graduated, extended, or income-based loan repayment might work better for you. We are working to bring these options into Game of Loans in the near future.
+\nOther factors that might impact the amount you might want to put towards student loans include how high your interest rates are, other debt you carry, how stable your occupation is, and how many dependents you have.
+"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

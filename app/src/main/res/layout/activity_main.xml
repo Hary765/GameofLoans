@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:text="Select Loan Type"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="30sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toTopOf="@+id/private_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/private_button"
+        android:layout_width="395dp"
+        android:layout_height="74dp"
+        android:layout_above="@+id/unsub_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Private Loans"
+        android:textColor="@color/Grey"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/unsub_button"
+        android:layout_width="393dp"
+        android:layout_height="74dp"
+        android:layout_above="@+id/sub_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Unsubsidized Loans"
+        android:textColor="@color/Grey"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.859" />
+
+    <Button
+        android:id="@+id/sub_button"
+        android:layout_width="394dp"
+        android:layout_height="74dp"
+        android:layout_above="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="35dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Subsidized Loans"
+        android:textColor="@color/Grey"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <Button
+        android:id="@+id/Calculations"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/budgeting"
+        android:layout_alignBottom="@+id/budgeting"
+        android:layout_alignStart="@+id/paymentplan"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Calculations"
+        android:textColor="@color/Black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/budgeting"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="17dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Budgeting"
+        android:textColor="@color/Black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/paymentplan"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/definitions"
+        android:layout_alignBottom="@+id/definitions"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="payment Plan"
+        android:textColor="@color/Black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/definitions"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Calculations"
+        android:layout_alignStart="@+id/budgeting"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Definitions"
+        android:textColor="@color/Black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/paymentplan"
+        android:layout_alignStart="@+id/textView"
+        android:fontFamily="serif"
+        android:text="More information"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="24sp"
+        android:typeface="serif" />
+
+</RelativeLayout>
